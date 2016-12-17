@@ -1,0 +1,34 @@
+﻿<Window x:Class="NukeSpace.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NukeSpace"
+        mc:Ignorable="d"
+        Title="NukeSite" Height="381.028" Width="291" Icon="NukeSite.ico">
+    <Grid>
+        <Button x:Name="NukeButton" Content="Delete" HorizontalAlignment="Left" 
+                Height="31" Margin="42,249,0,0" VerticalAlignment="Top" Width="104" Click="NukeButton_Click"/>
+        <ComboBox x:Name="DBBox" HorizontalAlignment="Left" Height="24" Margin="42,140,0,0" 
+                  VerticalAlignment="Top" Width="135" Text ="{Binding DBname, Mode=TwoWay}">
+            <ComboBoxItem Name="DB1">Database1</ComboBoxItem>
+            <ComboBoxItem Name="DB2">Database2</ComboBoxItem>
+            <ComboBoxItem Name="DB3">Database3</ComboBoxItem>
+            <ComboBoxItem Name="DB4">Database4</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="ServerBox" HorizontalAlignment="Left" Height="24" Margin="42,82,0,0" 
+                  VerticalAlignment="Top" Width="135" Text ="{Binding serverName, Mode=TwoWay}">
+            <ComboBoxItem Name="SERVER1">iManServer1</ComboBoxItem>
+            <ComboBoxItem Name="SERVER2">iManServer2</ComboBoxItem>
+        </ComboBox>
+        <Label x:Name="Serverlabel" Content="iManage Work Server" 
+               HorizontalAlignment="Left" Margin="42,56,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="DBlabel" Content="Database" 
+               HorizontalAlignment="Left" Margin="42,114,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="csvBox" HorizontalAlignment="Left" Height="24" Margin="42,200,0,0" 
+                 TextWrapping="Wrap" Text ="{Binding csvPath, Mode=TwoWay}" VerticalAlignment="Top" Width="191"/>
+        <Label x:Name="csvlabel" Content="CSV File Path" HorizontalAlignment="Left" 
+               Margin="42,174,0,0" VerticalAlignment="Top" Width="124"/>
+
+    </Grid>
+</Window>

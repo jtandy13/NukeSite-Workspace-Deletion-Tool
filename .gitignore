@@ -250,3 +250,9 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+/NukeSite/NukeSite.sln
+/NukeSite/NukeSpace/NukeSite.csproj
+/NukeSite/NukeSpace/Properties
+/NukeSite/NukeSpace/App.config
+/NukeSite/NukeSpace/App.xaml
+/NukeSite/NukeSpace/App.xaml.cs
